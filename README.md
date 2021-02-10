@@ -28,13 +28,25 @@ Simon:
 
 ![1](browser_history/simon1.PNG)
 
-![2](simon2.png)
+![2](browser_history/simon2.PNG)
 
-![3](simon3.png)
+![3](browser_history/simon3.PNG)
 
 Claus:
 
-Mads: 
+![1](browser_history/clausbh1.png)
+
+![2](browser_history/claus2.PNG)
+
+Mads:
+
+![1](browser_history/mads1.PNG)
+
+![2](browser_history/mads2.PNG)
+
+![3](browser_history/mads3.PNG)
+
+![4](browser_history/mads4.PNG)
 
 ## 3 biggest stumbling blocks
 Opgaveformuleringen - vi var i tvivl om hvilke bits der var encoded på pixels, opgaveformuleringen kunne godt have været mere klar.
