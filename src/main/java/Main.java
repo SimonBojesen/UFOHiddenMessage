@@ -15,50 +15,44 @@ public class Main {
         //System.out.println(getMessageFromIntArray(allPixels));
     }
 
-
-    public static String toBitString(final byte val) {
-        return String.format("%8s", Integer.toBinaryString(val & 0xFF))
-                .replace(' ', '0');
-    }
-
     private static void marchThroughImage(BufferedImage image) {
         int w = image.getWidth();
         int h = image.getHeight();
         System.out.println("width, height: " + w + ", " + h);
 
         String extracted = "";
-
         for (int i = 0; i < h; i++) {
             for (int j = 0; j < w; j++) {
+                //this sout was to check validity of the loops
                 //System.out.println("x,y: " + j + ", " + i);
+
                 int pixel = image.getRGB(j, i);
                 int blue = (pixel) & 0xff;
                 String binary = Integer.toBinaryString(blue);
-                //System.out.println(binary);
                 extracted += binary.substring(binary.length()-1);
             }
         }
-
-        System.out.println(extracted);
+        System.out.println("extracted bits: "+ extracted);
 
         String[] bytes = new String[1160];
         for(int i = 0, x=0; i < extracted.length()-8; i+= 8, x++)
         {
             bytes[x] = extracted.substring(i, i+8);
         }
+
         StringBuilder sb = new StringBuilder();
         for(String b : bytes){
-
             if (b.equals("00000000")) break;
             sb.append(b);
             System.out.println("bytevalue: " + b + " ---- char: " +(char)Integer.parseInt(sb.reverse().toString(),2));
             sb.setLength(0);
-
         }
-
-
     }
 
+    /*public static String toBitString(final byte val) {
+        return String.format("%8s", Integer.toBinaryString(val & 0xFF))
+                .replace(' ', '0');
+    }*/
 
     /*public static int[][] getImageToPixels(BufferedImage bufferedImage) {
         if (bufferedImage == null) {
@@ -98,5 +92,4 @@ public class Main {
 
         return msg;
     }*/
-
 }
