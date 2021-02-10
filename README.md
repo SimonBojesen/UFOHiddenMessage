@@ -26,6 +26,11 @@ Vi converterer billedefil til byte array -> Fail fast metode: Gå udfra at pixel
 
 ## Search history and visited sites
 Simon:
+![1](browser_history/simon1.png)
+
+![2](simon2.png)
+
+![3](simon3.png)
 
 Claus:
 
