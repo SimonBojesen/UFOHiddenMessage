@@ -60,7 +60,7 @@ public class Main {
     }
 
 
-    public static int[][] getImageToPixels(BufferedImage bufferedImage) {
+    /*public static int[][] getImageToPixels(BufferedImage bufferedImage) {
         if (bufferedImage == null) {
             throw new IllegalArgumentException();
         }
@@ -71,7 +71,7 @@ public class Main {
             bufferedImage.getRGB(0, i, w, 1, pixels[i], 0, w);
         }
         return pixels;
-    }
+    }*/
 
     /*public static String getMessageFromIntArray(int[][] pixels) {
         String msg = "";
